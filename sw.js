@@ -1,6 +1,6 @@
 // Keeps the app shell (and the Transformers.js runtime) available with no signal.
 // Gemma's weights are cached separately by Transformers.js in the browser Cache API.
-const CACHE = 'otd-v1';
+const CACHE = 'otd-v2';
 const SHELL = ['./', './index.html', './styles.css', './manifest.webmanifest', './src/app.js', './src/plan.js', './src/engines.js', './src/gemma-worker.js'];
 self.addEventListener('install', (e) => e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting())));
 self.addEventListener('activate', (e) => e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim())));

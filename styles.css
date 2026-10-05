@@ -1,3 +1,4 @@
+[hidden] { display: none !important; }
 :root { --green:#2f5d3a; --leaf:#e8f1e4; --ink:#1d2a1f; --muted:#5d6b5f; --warn:#fff4dd; --line:#d6e0d3; }
 * { box-sizing: border-box; }
 body { margin:0; font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; color:var(--ink); background:#f6f8f3; }
