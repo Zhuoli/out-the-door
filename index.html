@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Out the Door: find the hour to go outside, then close the tab</title>
+  <meta name="description" content="Tell it what you want to do outside. Gemma, running on your own device, reads the request; code picks the best window in the forecast. You get a calendar reminder and a pocket card that works with no signal." />
+  <meta name="theme-color" content="#2f5d3a" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="pocket-banner" class="pocket" hidden></div>
+
+  <header class="hero">
+    <h1>🌿 Out the Door</h1>
+    <p class="tag">Say what you want to do outside. <strong>Gemma, running on your own device</strong>, reads it, the forecast picks the hour, and you get a reminder. Then close this tab. The screen should be the shortest part.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>1. Where are you?</h2>
+      <div class="row">
+        <button id="geo" class="secondary">📍 Use my location</button>
+        <form id="place-form" class="row grow"><input id="place" placeholder="or type a town (e.g. Bothell)" aria-label="Town" /><button class="secondary">Search</button></form>
+      </div>
+      <p id="place-status" class="fine">Forecasts come from <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> (free, open data, no account). The last one is saved on this device for when you have no signal.</p>
+    </section>
+
+    <section class="card">
+      <h2>2. What do you want to do?</h2>
+      <textarea id="ask" rows="2" placeholder="45 min walk with the dog before dark, I hate wind"></textarea>
+      <div class="chips" id="examples"></div>
+      <div class="row engine">
+        <label>Read it with
+          <select id="engine">
+            <option value="ollama">Gemma 4 via Ollama on my computer (reads your request + writes the note)</option>
+            <option value="browser">Gemma 3 1B in this browser (experimental: writes the note only; ≈1 GB once)</option>
+            <option value="none">No model (simple keyword rules)</option>
+          </select>
+        </label>
+        <button id="load" class="secondary">Load Gemma</button>
+        <span id="engine-status" class="fine"></span>
+      </div>
+      <progress id="load-progress" max="100" value="0" hidden></progress>
+      <button id="go" class="primary">Find my window</button>
+    </section>
+
+    <section id="out" hidden>
+      <section class="card">
+        <h2>Read as</h2>
+        <div id="read" class="chips"></div>
+        <p id="repairs" class="fine"></p>
+      </section>
+      <section class="card best" id="best"></section>
+      <section class="card">
+        <h2>Other good windows</h2>
+        <div id="others"></div>
+      </section>
+    </section>
+  </main>
+
+  <div id="gone" class="gone" hidden>
+    <div>
+      <p class="big">Go. 🌿</p>
+      <p id="gone-when"></p>
+      <p class="fine">Your pocket card is saved on this device and opens with no signal. You can close this tab now.</p>
+      <button id="back" class="secondary">I'm still here</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Open source (Apache-2.0) · <a href="https://github.com/Zhuoli/out-the-door" target="_blank" rel="noopener">code</a> · No account, no analytics, no backend. Your request never leaves this device unless you pick Ollama, and then it only goes to your own computer.</p>
+  </footer>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>

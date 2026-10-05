@@ -1,0 +1,227 @@
+{
+  "date": "2026-10-05T21:01:04.413Z",
+  "set": "heldout",
+  "requests": 12,
+  "engines": [
+    {
+      "engine": "keyword baseline (no model)",
+      "exactMatch": "0/12",
+      "fieldAccuracy": {
+        "activity": "7/12",
+        "durationMin": "9/12",
+        "earliest": "11/12",
+        "latest": "11/12",
+        "days": "12/12",
+        "avoid": "6/12"
+      },
+      "validJson": "12/12",
+      "avgParseMs": 0,
+      "notesPassingVerifier": null,
+      "rows": [
+        {
+          "text": "need to stretch my legs for twenty minutes, it's been a long day of calls",
+          "got": {
+            "activity": "walk",
+            "durationMin": 45,
+            "earliest": null,
+            "latest": null,
+            "days": "next3",
+            "avoid": []
+          },
+          "wrong": [
+            "durationMin"
+          ],
+          "raw": null,
+          "ms": 1
+        },
+        {
+          "text": "take the pup around the lake once I log off at 5:30",
+          "got": {
+            "activity": "walk",
+            "durationMin": 45,
+            "earliest": null,
+            "latest": null,
+            "days": "next3",
+            "avoid": []
+          },
+          "wrong": [
+            "earliest"
+          ],
+          "raw": null,
+          "ms": 0
+        },
+        {
+          "text": "go see the larches turn gold this week, all-day trip, like 6 hours",
+          "got": {
+            "activity": "walk",
+            "durationMin": 360,
+            "earliest": null,
+            "latest": null,
+            "days": "next3",
+            "avoid": []
+          },
+          "wrong": [
+            "activity"
+          ],
+          "raw": null,
+          "ms": 1
+        },
+        {
+          "text": "pull the weeds out front tomorrow, I burn easily",
+          "got": {
+            "activity": "garden",
+            "durationMin": 60,
+            "earliest": null,
+            "latest": null,
+            "days": "tomorrow",
+            "avoid": []
+          },
+          "wrong": [
+            "avoid"
+          ],
+          "raw": null,
+          "ms": 0
+        },
+        {
+          "text": "I don't want to get blown around on the bike, 75 minutes",
+          "got": {
+            "activity": "bike",
+            "durationMin": 75,
+            "earliest": null,
+            "latest": null,
+            "days": "next3",
+            "avoid": []
+          },
+          "wrong": [
+            "avoid"
+          ],
+          "raw": null,
+          "ms": 0
+        },
+        {
+          "text": "tramp through the woods for a couple of hours while it's still light",
+          "got": {
+            "activity": "walk",
+            "durationMin": 45,
+            "earliest": null,
+            "latest": null,
+            "days": "next3",
+            "avoid": []
+          },
+          "wrong": [
+            "activity",
+            "durationMin",
+            "avoid"
+          ],
+          "raw": null,
+          "ms": 0
+        },
+        {
+          "text": "want to hear the geese heading south, maybe an hour at the wetlands",
+          "got": {
+            "activity": "walk",
+            "durationMin": 60,
+            "earliest": null,
+            "latest": null,
+            "days": "next3",
+            "avoid": [
+              "rain"
+            ]
+          },
+          "wrong": [
+            "activity",
+            "avoid"
+          ],
+          "raw": null,
+          "ms": 0
+        },
+        {
+          "text": "Milky Way photos if the sky is clear, 2 hours",
+          "got": {
+            "activity": "stars",
+            "durationMin": 120,
+            "earliest": null,
+            "latest": null,
+            "days": "next3",
+            "avoid": [
+              "heat"
+            ]
+          },
+          "wrong": [
+            "avoid"
+          ],
+          "raw": null,
+          "ms": 0
+        },
+        {
+          "text": "tempo run, 50 min, I melt above 20 degrees",
+          "got": {
+            "activity": "run",
+            "durationMin": 50,
+            "earliest": null,
+            "latest": null,
+            "days": "next3",
+            "avoid": []
+          },
+          "wrong": [
+            "avoid"
+          ],
+          "raw": null,
+          "ms": 0
+        },
+        {
+          "text": "eat lunch on a bench outside today instead of at my desk",
+          "got": {
+            "activity": "walk",
+            "durationMin": 45,
+            "earliest": "11:30",
+            "latest": "14:00",
+            "days": "today",
+            "avoid": []
+          },
+          "wrong": [
+            "activity",
+            "durationMin"
+          ],
+          "raw": null,
+          "ms": 0
+        },
+        {
+          "text": "rake leaves and put the garden to bed for the winter, 2h, needs to be dry",
+          "got": {
+            "activity": "foliage",
+            "durationMin": 120,
+            "earliest": null,
+            "latest": null,
+            "days": "next3",
+            "avoid": [
+              "rain"
+            ]
+          },
+          "wrong": [
+            "activity"
+          ],
+          "raw": null,
+          "ms": 0
+        },
+        {
+          "text": "sunrise walk on the beach tomorrow, back by 9",
+          "got": {
+            "activity": "walk",
+            "durationMin": 45,
+            "earliest": null,
+            "latest": null,
+            "days": "tomorrow",
+            "avoid": []
+          },
+          "wrong": [
+            "latest"
+          ],
+          "raw": null,
+          "ms": 0
+        }
+      ],
+      "notes": []
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "date": "2026-10-05T21:05:20.770Z",
+  "set": "heldout",
+  "requests": 12,
+  "engines": [
+    {
+      "engine": "gemma-3-1b-it (ONNX q4, Transformers.js, CPU) — the in-browser model",
+      "exactMatch": "0/12",
+      "fieldAccuracy": {
+        "activity": "5/12",
+        "durationMin": "6/12",
+        "earliest": "6/12",
+        "latest": "6/12",
+        "days": "9/12",
+        "avoid": "1/12"
+      },
+      "validJson": "11/12",
+      "avgParseMs": 3845,
+      "notesPassingVerifier": null,
+      "rows": [
+        {
+          "text": "need to stretch my legs for twenty minutes, it's been a long day of calls",
+          "got": {
+            "activity": "walk",
+            "durationMin": 20,
+            "earliest": null,
+            "latest": null,
+            "days": "next3",
+            "avoid": [
+              "dark",
+              "wind"
+            ]
+          },
+          "wrong": [
+            "avoid"
+          ],
+          "raw": "{\"activity\":\"walk\",\"durationMin\":20,\"earliest\":null,\"latest\":null,\"days\":\"next3\",\"avoid\":[\"dark\",\"wind\"]}",
+          "ms": 3589
+        },
+        {
+          "text": "take the pup around the lake once I log off at 5:30",
+          "got": {
+            "activity": "walk",
+            "durationMin": 45,
+            "earliest": null,
+            "latest": null,
+            "days": "next3",
+            "avoid": [
+              "dark",
+              "wind"
+            ]
+          },
+          "wrong": [
+            "earliest",
+            "avoid"
+          ],
+          "raw": "{\"activity\":\"walk\",\"durationMin\":null,\"earliest\":null,\"latest\":null,\"days\":\"next3\",\"avoid\":[\"dark\",\"wind\"]}",
+          "ms": 3381
+        },
+        {
+          "text": "go see the larches turn gold this week, all-day trip, like 6 hours",
+          "got": {
+            "activity": "walk",
+            "durationMin": 15,
+            "earliest": "08:00",
+            "latest": "17:00",
+            "days": "next3",
+            "avoid": [
+              "dark",
+              "wind"
+            ]
+          },
+          "wrong": [
+            "activity",
+            "durationMin",
+            "earliest",
+            "latest",
+            "avoid"
+          ],
+          "raw": "{\"activity\":\"walk\",\"durationMin\":6,\"earliest\":\"08:00\",\"latest\":\"17:00\",\"days\":\"this week\",\"avoid\":[\"dark\",\"wind\"]}",
+          "ms": 4115
+        },
+        {
+          "text": "pull the weeds out front tomorrow, I burn easily",
+          "got": {
+            "activity": "walk",
+            "durationMin": 45,
+            "earliest": null,
+            "latest": "12:00",
+            "days": "today",
+            "avoid": [
+              "dark",
+              "wind"
+            ]
+          },
+          "wrong": [
+            "activity",
+            "durationMin",
+            "latest",
+            "days",
+            "avoid"
+          ],
+          "raw": "{\"activity\":\"weed_pulling\",\"durationMin\":null,\"earliest\":\"morning\",\"latest\":\"12:00\",\"days\":\"today\",\"avoid\":[\"dark\",\"wind\"]}",
+          "ms": 4134
+        },
+        {
+          "text": "I don't want to get blown around on the bike, 75 minutes",
+          "got": {
+            "activity": "bike",
+            "durationMin": 75,
+            "earliest": "07:30",
+            "latest": "09:00",
+            "days": "today",
+            "avoid": [
+              "wind"
+            ]
+          },
+          "wrong": [
+            "earliest",
+            "latest",
+            "days"
+          ],
+          "raw": "{\"activity\":\"bike\",\"durationMin\":75,\"earliest\":\"07:30\",\"latest\":\"09:00\",\"days\":\"today\",\"avoid\":[\"wind\"]}",
+          "ms": 4086
+        },
+        {
+          "text": "tramp through the woods for a couple of hours while it's still light",
+          "got": {
+            "activity": "walk",
+            "durationMin": 45,
+            "earliest": null,
+            "latest": null,
+            "days": "next3",
+            "avoid": []
+          },
+          "wrong": [
+            "activity",
+            "durationMin",
+            "avoid"
+          ],
+          "raw": "{\"activity\":\"walk\",\"durationMin\":2 hours,\"earliest\":null,\"latest\":null,\"days\":\"today\",\"avoid\":[\"dark\",\"wind\"]}",
+          "ms": 3876
+        },
+        {
+          "text": "want to hear the geese heading south, maybe an hour at the wetlands",
+          "got": {
+            "activity": "walk",
+            "durationMin": 60,
+            "earliest": null,
+            "latest": null,
+            "days": "next3",
+            "avoid": [
+              "wind",
+              "dark"
+            ]
+          },
+          "wrong": [
+            "activity",
+            "avoid"
+          ],
+          "raw": "{\"activity\":\"fly\",\"durationMin\":60,\"earliest\":\"morning\",\"latest\":\"late afternoon\",\"days\":\"next3\",\"avoid\":[\"wind\",\"dark\"]}",
+          "ms": 3854
+        },
+        {
+          "text": "Milky Way photos if the sky is clear, 2 hours",
+          "got": {
+            "activity": "walk",
+            "durationMin": 15,
+            "earliest": null,
+            "latest": null,
+            "days": "next3",
+            "avoid": [
+              "dark",
+              "wind"
+            ]
+          },
+          "wrong": [
+            "activity",
+            "durationMin",
+            "avoid"
+          ],
+          "raw": "{\"activity\":\"photo\",\"durationMin\":2,\"earliest\":\"after dark\",\"latest\":\"after dark\",\"days\":\"next3\",\"avoid\":[\"dark\",\"wind\"]}",
+          "ms": 3756
+        },
+        {
+          "text": "tempo run, 50 min, I melt above 20 degrees",
+          "got": {
+            "activity": "run",
+            "durationMin": 50,
+            "earliest": null,
+            "latest": null,
+            "days": "today",
+            "avoid": [
+              "dark",
+              "wind"
+            ]
+          },
+          "wrong": [
+            "days",
+            "avoid"
+          ],
+          "raw": "{\"activity\":\"run\",\"durationMin\":50,\"earliest\":null,\"latest\":\"20°\", \"days\":\"today\",\"avoid\":[\"dark\",\"wind\"]}",
+          "ms": 3609
+        },
+        {
+          "text": "eat lunch on a bench outside today instead of at my desk",
+          "got": {
+            "activity": "walk",
+            "durationMin": 45,
+            "earliest": null,
+            "latest": null,
+            "days": "today",
+            "avoid": [
+              "dark",
+              "wind"
+            ]
+          },
+          "wrong": [
+            "activity",
+            "durationMin",
+            "earliest",
+            "latest",
+            "avoid"
+          ],
+          "raw": "{\"activity\":\"eat\",\"durationMin\":null,\"earliest\":null,\"latest\":null,\"days\":\"today\",\"avoid\":[\"dark\",\"wind\"]}",
+          "ms": 3562
+        },
+        {
+          "text": "rake leaves and put the garden to bed for the winter, 2h, needs to be dry",
+          "got": {
+            "activity": "walk",
+            "durationMin": 15,
+            "earliest": "09:00",
+            "latest": "17:00",
+            "days": "next3",
+            "avoid": [
+              "rain",
+              "wind"
+            ]
+          },
+          "wrong": [
+            "activity",
+            "durationMin",
+            "earliest",
+            "latest",
+            "avoid"
+          ],
+          "raw": "{\"activity\":\"rake\",\"durationMin\":2,\"earliest\":\"09:00\",\"latest\":\"17:00\",\"days\":\"next3\",\"avoid\":[\"rain\",\"wind\"]}",
+          "ms": 4019
+        },
+        {
+          "text": "sunrise walk on the beach tomorrow, back by 9",
+          "got": {
+            "activity": "walk",
+            "durationMin": 45,
+            "earliest": "06:00",
+            "latest": "07:00",
+            "days": "tomorrow",
+            "avoid": [
+              "dark",
+              "wind"
+            ]
+          },
+          "wrong": [
+            "earliest",
+            "latest",
+            "avoid"
+          ],
+          "raw": "{\"activity\":\"walk\",\"durationMin\":null,\"earliest\":\"06:00\",\"latest\":\"07:00\",\"days\":\"tomorrow\",\"avoid\":[\"dark\",\"wind\"]}",
+          "ms": 4158
+        }
+      ],
+      "notes": []
+    }
+  ]
+}

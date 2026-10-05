@@ -1,0 +1,22 @@
+[
+  {"text": "45 min walk with the dog before dark, I hate wind", "expect": {"activity": "walk", "durationMin": 45, "earliest": null, "latest": null, "days": "next3", "avoid": ["dark", "wind"]}},
+  {"text": "quick run after work today, 30 minutes", "expect": {"activity": "run", "durationMin": 30, "earliest": "17:00", "latest": null, "days": "today", "avoid": []}},
+  {"text": "I want to go birding tomorrow morning for two hours", "expect": {"activity": "birding", "durationMin": 120, "earliest": null, "latest": "12:00", "days": "tomorrow", "avoid": []}},
+  {"text": "Where can I catch the fall colors this week? maybe an hour and a half", "expect": {"activity": "foliage", "durationMin": 90, "earliest": null, "latest": null, "days": "next3", "avoid": []}},
+  {"text": "need to get my garlic in the ground before it rains, about an hour", "expect": {"activity": "garden", "durationMin": 60, "earliest": null, "latest": null, "days": "next3", "avoid": ["rain"]}},
+  {"text": "lunch break walk, I don't want to get soaked", "expect": {"activity": "walk", "durationMin": null, "earliest": "11:30", "latest": "14:00", "days": "next3", "avoid": ["rain"]}},
+  {"text": "3 hour hike on Saturday-ish, not too hot please", "expect": {"activity": "hike", "durationMin": 180, "earliest": null, "latest": null, "days": "next3", "avoid": ["heat"]}},
+  {"text": "take the kids out to look at stars tonight for an hour", "expect": {"activity": "stars", "durationMin": 60, "earliest": null, "latest": null, "days": "today", "avoid": []}},
+  {"text": "bike ride tomorrow, wind is my enemy", "expect": {"activity": "bike", "durationMin": null, "earliest": null, "latest": null, "days": "tomorrow", "avoid": ["wind"]}},
+  {"text": "picnic in the park with friends today, 2 hrs, it has to be dry", "expect": {"activity": "picnic", "durationMin": 120, "earliest": null, "latest": null, "days": "today", "avoid": ["rain"]}},
+  {"text": "20 minute jog, I'm cold all the time so warmer is better", "expect": {"activity": "run", "durationMin": 20, "earliest": null, "latest": null, "days": "next3", "avoid": ["cold"]}},
+  {"text": "sit outside with a book and coffee for 45 min this afternoon", "expect": {"activity": "picnic", "durationMin": 45, "earliest": "12:00", "latest": null, "days": "today", "avoid": []}},
+  {"text": "leaf peeping drive + short walk tomorrow, get back before dark", "expect": {"activity": "foliage", "durationMin": null, "earliest": null, "latest": null, "days": "tomorrow", "avoid": ["dark"]}},
+  {"text": "weed the yard for half an hour, avoid the sun", "expect": {"activity": "garden", "durationMin": 30, "earliest": null, "latest": null, "days": "next3", "avoid": ["sun"]}},
+  {"text": "Owl walk? or any bird walk, 90 min, tomorrow", "expect": {"activity": "birding", "durationMin": 90, "earliest": null, "latest": null, "days": "tomorrow", "avoid": []}},
+  {"text": "long trail day, like 5 hours, sometime in the next few days", "expect": {"activity": "hike", "durationMin": 300, "earliest": null, "latest": null, "days": "next3", "avoid": []}},
+  {"text": "evening stroll after dinner, an hour, no rain", "expect": {"activity": "walk", "durationMin": 60, "earliest": "17:00", "latest": null, "days": "next3", "avoid": ["rain"]}},
+  {"text": "I've been at my desk all day. Get me outside for 15 minutes today.", "expect": {"activity": "walk", "durationMin": 15, "earliest": null, "latest": null, "days": "today", "avoid": []}},
+  {"text": "morning cycling, 40 km so maybe 2 hours, before noon", "expect": {"activity": "bike", "durationMin": 120, "earliest": null, "latest": "12:00", "days": "next3", "avoid": []}},
+  {"text": "plant tulip bulbs tomorrow afternoon, it's chilly so not too cold", "expect": {"activity": "garden", "durationMin": null, "earliest": "12:00", "latest": null, "days": "tomorrow", "avoid": ["cold"]}}
+]

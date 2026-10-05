@@ -1,0 +1,15 @@
+{
+  "name": "out-the-door",
+  "version": "1.0.0",
+  "description": "Find the hour to go outside, then close the tab. Gemma reads your request on your own device; code picks the window from an open forecast.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "gemma:check": "node scripts/gemma-check.mjs",
+    "serve": "npx --yes http-server -p 8080 -c-1 ."
+  },
+  "devDependencies": {
+    "@huggingface/transformers": "4.3.0"
+  }
+}

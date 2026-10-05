@@ -1,0 +1,14 @@
+[
+  {"text": "need to stretch my legs for twenty minutes, it's been a long day of calls", "expect": {"activity": "walk", "durationMin": 20, "earliest": null, "latest": null, "days": "next3", "avoid": []}},
+  {"text": "take the pup around the lake once I log off at 5:30", "expect": {"activity": "walk", "durationMin": null, "earliest": "17:30", "latest": null, "days": "next3", "avoid": []}},
+  {"text": "go see the larches turn gold this week, all-day trip, like 6 hours", "expect": {"activity": "foliage", "durationMin": 360, "earliest": null, "latest": null, "days": "next3", "avoid": []}},
+  {"text": "pull the weeds out front tomorrow, I burn easily", "expect": {"activity": "garden", "durationMin": null, "earliest": null, "latest": null, "days": "tomorrow", "avoid": ["sun"]}},
+  {"text": "I don't want to get blown around on the bike, 75 minutes", "expect": {"activity": "bike", "durationMin": 75, "earliest": null, "latest": null, "days": "next3", "avoid": ["wind"]}},
+  {"text": "tramp through the woods for a couple of hours while it's still light", "expect": {"activity": "hike", "durationMin": 120, "earliest": null, "latest": null, "days": "next3", "avoid": ["dark"]}},
+  {"text": "want to hear the geese heading south, maybe an hour at the wetlands", "expect": {"activity": "birding", "durationMin": 60, "earliest": null, "latest": null, "days": "next3", "avoid": []}},
+  {"text": "Milky Way photos if the sky is clear, 2 hours", "expect": {"activity": "stars", "durationMin": 120, "earliest": null, "latest": null, "days": "next3", "avoid": []}},
+  {"text": "tempo run, 50 min, I melt above 20 degrees", "expect": {"activity": "run", "durationMin": 50, "earliest": null, "latest": null, "days": "next3", "avoid": ["heat"]}},
+  {"text": "eat lunch on a bench outside today instead of at my desk", "expect": {"activity": "picnic", "durationMin": null, "earliest": "11:30", "latest": "14:00", "days": "today", "avoid": []}},
+  {"text": "rake leaves and put the garden to bed for the winter, 2h, needs to be dry", "expect": {"activity": "garden", "durationMin": 120, "earliest": null, "latest": null, "days": "next3", "avoid": ["rain"]}},
+  {"text": "sunrise walk on the beach tomorrow, back by 9", "expect": {"activity": "walk", "durationMin": null, "earliest": null, "latest": "09:00", "days": "tomorrow", "avoid": []}}
+]

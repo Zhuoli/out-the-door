@@ -1,0 +1,400 @@
+{
+  "date": "2026-10-05T20:56:30.816Z",
+  "requests": 20,
+  "engines": [
+    {
+      "engine": "gemma4:e2b (Ollama, CPU)",
+      "exactMatch": "13/20",
+      "fieldAccuracy": {
+        "activity": "20/20",
+        "durationMin": "20/20",
+        "earliest": "18/20",
+        "latest": "19/20",
+        "days": "17/20",
+        "avoid": "18/20"
+      },
+      "validJson": "20/20",
+      "avgParseMs": 6487,
+      "notesPassingVerifier": "6/6",
+      "rows": [
+        {
+          "text": "45 min walk with the dog before dark, I hate wind",
+          "got": {
+            "activity": "walk",
+            "durationMin": 45,
+            "earliest": null,
+            "latest": null,
+            "days": "next3",
+            "avoid": [
+              "wind"
+            ]
+          },
+          "wrong": [
+            "avoid"
+          ],
+          "raw": "{\"activity\":\"walk\",\"durationMin\":45,\"earliest\":null,\"latest\":null,\"days\":\"next3\",\"avoid\":[\"wind\"]}",
+          "ms": 5870
+        },
+        {
+          "text": "quick run after work today, 30 minutes",
+          "got": {
+            "activity": "run",
+            "durationMin": 30,
+            "earliest": "17:00",
+            "latest": null,
+            "days": "today",
+            "avoid": []
+          },
+          "wrong": [],
+          "raw": "{\"activity\":\"run\",\"durationMin\":30,\"earliest\":\"17:00\",\"latest\":null,\"days\":\"today\"}",
+          "ms": 4902
+        },
+        {
+          "text": "I want to go birding tomorrow morning for two hours",
+          "got": {
+            "activity": "birding",
+            "durationMin": 120,
+            "earliest": null,
+            "latest": "12:00",
+            "days": "tomorrow",
+            "avoid": []
+          },
+          "wrong": [],
+          "raw": "{\"activity\":\"birding\",\"durationMin\":120,\"earliest\":null,\"latest\":\"12:00\",\"days\":\"tomorrow\"}",
+          "ms": 5389
+        },
+        {
+          "text": "Where can I catch the fall colors this week? maybe an hour and a half",
+          "got": {
+            "activity": "foliage",
+            "durationMin": 90,
+            "earliest": null,
+            "latest": null,
+            "days": "next3",
+            "avoid": []
+          },
+          "wrong": [],
+          "raw": "{\"activity\":\"foliage\",\"durationMin\":90,\"days\":\"next3\"}",
+          "ms": 4651
+        },
+        {
+          "text": "need to get my garlic in the ground before it rains, about an hour",
+          "got": {
+            "activity": "garden",
+            "durationMin": 60,
+            "earliest": null,
+            "latest": null,
+            "days": "today",
+            "avoid": [
+              "rain"
+            ]
+          },
+          "wrong": [
+            "days"
+          ],
+          "raw": "{\"activity\":\"garden\",\"durationMin\":60,\"earliest\":null,\"latest\":null,\"days\":\"today\",\"avoid\":[\"rain\"]}",
+          "ms": 4690
+        },
+        {
+          "text": "lunch break walk, I don't want to get soaked",
+          "got": {
+            "activity": "walk",
+            "durationMin": 45,
+            "earliest": "11:30",
+            "latest": "14:00",
+            "days": "today",
+            "avoid": [
+              "rain"
+            ]
+          },
+          "wrong": [
+            "days"
+          ],
+          "raw": "{\"activity\":\"walk\",\"durationMin\":null,\"earliest\":\"11:30\",\"latest\":\"14:00\",\"days\":\"today\",\"avoid\":[\"rain\"]}",
+          "ms": 5088
+        },
+        {
+          "text": "3 hour hike on Saturday-ish, not too hot please",
+          "got": {
+            "activity": "hike",
+            "durationMin": 180,
+            "earliest": null,
+            "latest": null,
+            "days": "next3",
+            "avoid": [
+              "heat"
+            ]
+          },
+          "wrong": [],
+          "raw": "{\"activity\":\"hike\",\"durationMin\":180,\"days\":\"next3\",\"avoid\":[\"heat\"]}",
+          "ms": 6059
+        },
+        {
+          "text": "take the kids out to look at stars tonight for an hour",
+          "got": {
+            "activity": "stars",
+            "durationMin": 60,
+            "earliest": "19:00",
+            "latest": null,
+            "days": "today",
+            "avoid": []
+          },
+          "wrong": [
+            "earliest"
+          ],
+          "raw": "{\"activity\":\"stars\",\"durationMin\":60,\"earliest\":\"19:00\",\"latest\":\"23:59\",\"days\":\"today\"}",
+          "ms": 9906
+        },
+        {
+          "text": "bike ride tomorrow, wind is my enemy",
+          "got": {
+            "activity": "bike",
+            "durationMin": 60,
+            "earliest": null,
+            "latest": null,
+            "days": "tomorrow",
+            "avoid": [
+              "wind"
+            ]
+          },
+          "wrong": [],
+          "raw": "{\"activity\":\"bike\",\"durationMin\":null,\"earliest\":null,\"latest\":null,\"days\":\"tomorrow\",\"avoid\":[\"wind\"]}",
+          "ms": 4910
+        },
+        {
+          "text": "picnic in the park with friends today, 2 hrs, it has to be dry",
+          "got": {
+            "activity": "picnic",
+            "durationMin": 120,
+            "earliest": null,
+            "latest": null,
+            "days": "today",
+            "avoid": []
+          },
+          "wrong": [
+            "avoid"
+          ],
+          "raw": "{\"activity\":\"picnic\",\"durationMin\":120,\"earliest\":null,\"latest\":null,\"days\":\"today\",\"avoid\":[\"dry\"]}",
+          "ms": 5051
+        },
+        {
+          "text": "20 minute jog, I'm cold all the time so warmer is better",
+          "got": {
+            "activity": "run",
+            "durationMin": 20,
+            "earliest": null,
+            "latest": null,
+            "days": "next3",
+            "avoid": [
+              "cold"
+            ]
+          },
+          "wrong": [],
+          "raw": "{\"activity\":\"run\",\"durationMin\":20,\"earliest\":null,\"latest\":null,\"days\":\"next3\",\"avoid\":[\"cold\"]}",
+          "ms": 4778
+        },
+        {
+          "text": "sit outside with a book and coffee for 45 min this afternoon",
+          "got": {
+            "activity": "picnic",
+            "durationMin": 45,
+            "earliest": "12:00",
+            "latest": "17:00",
+            "days": "today",
+            "avoid": []
+          },
+          "wrong": [
+            "latest"
+          ],
+          "raw": "{\"activity\":\"picnic\",\"durationMin\":45,\"earliest\":\"12:00\",\"latest\":\"17:00\",\"days\":\"today\"}",
+          "ms": 6499
+        },
+        {
+          "text": "leaf peeping drive + short walk tomorrow, get back before dark",
+          "got": {
+            "activity": "foliage",
+            "durationMin": 90,
+            "earliest": null,
+            "latest": null,
+            "days": "tomorrow",
+            "avoid": [
+              "dark"
+            ]
+          },
+          "wrong": [],
+          "raw": "{\"activity\":\"foliage\",\"durationMin\":null,\"earliest\":null,\"latest\":null,\"days\":\"tomorrow\",\"avoid\":[\"dark\"]}",
+          "ms": 5142
+        },
+        {
+          "text": "weed the yard for half an hour, avoid the sun",
+          "got": {
+            "activity": "garden",
+            "durationMin": 30,
+            "earliest": null,
+            "latest": null,
+            "days": "next3",
+            "avoid": [
+              "sun"
+            ]
+          },
+          "wrong": [],
+          "raw": "{\"activity\":\"garden\",\"durationMin\":30,\"earliest\":null,\"latest\":null,\"days\":\"next3\",\"avoid\":[\"sun\"]}",
+          "ms": 4621
+        },
+        {
+          "text": "Owl walk? or any bird walk, 90 min, tomorrow",
+          "got": {
+            "activity": "birding",
+            "durationMin": 90,
+            "earliest": null,
+            "latest": null,
+            "days": "tomorrow",
+            "avoid": []
+          },
+          "wrong": [],
+          "raw": "{\"activity\":\"birding\",\"durationMin\":90,\"days\":\"tomorrow\"}",
+          "ms": 3899
+        },
+        {
+          "text": "long trail day, like 5 hours, sometime in the next few days",
+          "got": {
+            "activity": "hike",
+            "durationMin": 300,
+            "earliest": null,
+            "latest": null,
+            "days": "next3",
+            "avoid": []
+          },
+          "wrong": [],
+          "raw": "{\"activity\":\"hike\",\"durationMin\":300,\"earliest\":null,\"latest\":null,\"days\":\"next3\"}",
+          "ms": 5199
+        },
+        {
+          "text": "evening stroll after dinner, an hour, no rain",
+          "got": {
+            "activity": "walk",
+            "durationMin": 60,
+            "earliest": "18:00",
+            "latest": null,
+            "days": "today",
+            "avoid": [
+              "rain"
+            ]
+          },
+          "wrong": [
+            "earliest",
+            "days"
+          ],
+          "raw": "{\"activity\":\"walk\",\"durationMin\":60,\"earliest\":\"18:00\",\"latest\":null,\"days\":\"today\",\"avoid\":[\"rain\"]}",
+          "ms": 5366
+        },
+        {
+          "text": "I've been at my desk all day. Get me outside for 15 minutes today.",
+          "got": {
+            "activity": "walk",
+            "durationMin": 15,
+            "earliest": null,
+            "latest": null,
+            "days": "today",
+            "avoid": []
+          },
+          "wrong": [],
+          "raw": "{\"activity\":\"walk\",\"durationMin\":15,\"days\":\"today\"}",
+          "ms": 10110
+        },
+        {
+          "text": "morning cycling, 40 km so maybe 2 hours, before noon",
+          "got": {
+            "activity": "bike",
+            "durationMin": 120,
+            "earliest": null,
+            "latest": "12:00",
+            "days": "next3",
+            "avoid": []
+          },
+          "wrong": [],
+          "raw": "{\"activity\":\"bike\",\"durationMin\":120,\"earliest\":null,\"latest\":\"12:00\",\"days\":\"next3\"}",
+          "ms": 21769
+        },
+        {
+          "text": "plant tulip bulbs tomorrow afternoon, it's chilly so not too cold",
+          "got": {
+            "activity": "garden",
+            "durationMin": 60,
+            "earliest": "12:00",
+            "latest": null,
+            "days": "tomorrow",
+            "avoid": [
+              "cold"
+            ]
+          },
+          "wrong": [],
+          "raw": "{\"activity\":\"garden\",\"durationMin\":null,\"earliest\":\"12:00\",\"latest\":1800,\"days\":\"tomorrow\",\"avoid\":[\"cold\"]}",
+          "ms": 5841
+        }
+      ],
+      "notes": [
+        {
+          "place": "Seattle, WA",
+          "activity": "walk",
+          "window": "2026-10-05 18:00-18:45",
+          "score": 100,
+          "note": "Leave at 6 PM and be back by 6:45 PM. Bring a headlamp since you finish near sunset. Look for the light as it fades.",
+          "ok": true,
+          "issues": [],
+          "ms": 5445
+        },
+        {
+          "place": "Seattle, WA",
+          "activity": "birding",
+          "window": "2026-10-06 07:00-09:00",
+          "score": 100,
+          "note": "Leave at 7 AM and be back by 9 AM. Bring a fleece and binoculars. Look for the light filtering through the trees.",
+          "ok": true,
+          "issues": [],
+          "ms": 4645
+        },
+        {
+          "place": "Seattle, WA",
+          "activity": "foliage",
+          "window": "2026-10-05 16:00-17:30",
+          "score": 100,
+          "note": "Leave at 4 PM and be back by 5:30 PM. Bring nothing special with you. Look for the low golden light before sunset.",
+          "ok": true,
+          "issues": [],
+          "ms": 7407
+        },
+        {
+          "place": "Bergen, Norway",
+          "activity": "walk",
+          "window": "2026-10-05 17:00-18:00",
+          "score": 29,
+          "note": "Leave at 5 PM and be back by 6 PM. Bring a rain shell, a fleece, and a hat that stays on. Look for the golden light of the autumn sky.",
+          "ok": true,
+          "issues": [],
+          "ms": 5947
+        },
+        {
+          "place": "Phoenix, AZ",
+          "activity": "run",
+          "window": "2026-10-07 06:00-06:40",
+          "score": 51,
+          "note": "Leave at 6 AM and be back by 6:40 AM. Bring nothing special with you. Look for the light as you run.",
+          "ok": true,
+          "issues": [],
+          "ms": 5179
+        },
+        {
+          "place": "Phoenix, AZ",
+          "activity": "garden",
+          "window": "2026-10-06 06:00-07:00",
+          "score": 95,
+          "note": "Leave at 6 AM and be back by 7 AM. Bring nothing special with you. Look for the golden light filtering through the trees.",
+          "ok": true,
+          "issues": [],
+          "ms": 5939
+        }
+      ]
+    }
+  ]
+}

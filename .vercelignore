@@ -1,0 +1,8 @@
+node_modules
+test
+scripts
+results
+DEV_POST.md
+*.log
+.env*
+.vercel
